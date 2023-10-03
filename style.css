@@ -1,0 +1,11 @@
+#canvas {
+    border: 2px solid black;
+    
+  }
+  body{
+      text-align: center;
+  }
+  img{
+      width: 800;
+      height: 400;
+  }
