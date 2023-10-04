@@ -4,6 +4,9 @@
   }
   body{
       text-align: center;
+      font-family: 'Rubik', sans-serif;
+      
+      font-weight: bold;
   }
   img{
       width: 800;
