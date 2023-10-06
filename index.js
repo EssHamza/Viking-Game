@@ -14,6 +14,10 @@ const player = {
   y : 280,
   width : 100,
   height: 100,
+  jumping: false,
+  jumpHeight: 250,
+  jumpSpeed: 3,
+  initialY: 280,
 }
 const movingStuff = [];
 
@@ -73,10 +77,7 @@ setInterval(function () {
   movingStuff.push(newObject);
 }, 2000); 
 
-function jump(){
-  player.y -= 50;
-  
-}
+
 function moveItems(){for (let i = 0; i < movingStuff.length; i++) {
   const item = movingStuff[i];
   item.x -= 3.5;
@@ -90,12 +91,37 @@ function moveItems(){for (let i = 0; i < movingStuff.length; i++) {
   }
 }}
 
+function jump(){
+  if (!player.jumping) {
+    player.jumping = true;
+    let jumpInterval = setInterval(() => {
+        player.y -= player.jumpSpeed;
+        if (player.y <= player.initialY - player.jumpHeight) {
+            clearInterval(jumpInterval);
+            fall();
+        }
+    }, 20);
+}
+}
+
+function fall() {
+let fallInterval = setInterval(() => {
+    player.y += player.jumpSpeed;
+    if (player.y >= player.initialY) {
+        player.y = player.initialY; 
+        player.jumping = false;
+        clearInterval(fallInterval);
+    }
+}, 20);
+}
+
 
 function updateCanvas() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(backgroundImg, 0, 0, canvas.width, canvas.height);
   ctx.drawImage(playerImg, player.x, player.y, player.width, player.height);
   moveItems();
+ 
 
   requestAnimationFrame(updateCanvas);
 }
@@ -104,11 +130,12 @@ startBtn.onclick = function () {
   updateCanvas();
 };
 
- document.addEventListener('keydown', (event) => {
-            if (event.key === ' ') {
-                jump();
-            }
-        });
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === ' ') {
+      jump();
+  }
+});
 
 document.addEventListener('click', function () {
   startSound.play().catch(function(error) {
