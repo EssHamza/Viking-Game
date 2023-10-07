@@ -2,10 +2,14 @@
 
 You can try this game here 
 
-# Viking Rush Game
-
-## Description
+## Introduction
 Viking Rush is an exciting and challenging game where you control a Viking exploring different worlds. Your mission is to collect coins and avoid dangerous objects to achieve the highest score possible. Be careful not to die!
+
+##Built with 
+-HTML5
+-CSS3
+-JavaScript
+
 
 ## How to Play
 - Use the **Up** and **Down** arrow keys to move the Viking up and down.
@@ -24,9 +28,6 @@ Viking Rush is an exciting and challenging game where you control a Viking explo
 1. Clone the repository to your local machine.
 2. Open the `index.html` file in a modern web browser.
 3. Click the **START** button to begin the game.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
