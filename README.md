@@ -1,5 +1,7 @@
 # Root-Learn-Web-App
 
+You can try this game here 
+
 # Viking Rush Game
 
 ## Description
@@ -18,17 +20,10 @@ Viking Rush is an exciting and challenging game where you control a Viking explo
 - Background music and collision sounds.
 - Game Over screen with final score display.
 
-## Screenshots
-![Gameplay Screenshot](screenshot.png)
-
 ## Installation
 1. Clone the repository to your local machine.
 2. Open the `index.html` file in a modern web browser.
 3. Click the **START** button to begin the game.
-
-## Credits
-- Background music: [Woody Path](assets/y2mate.com - Woody Path.mp3)
-- Sound effects: [Various assets](assets/)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
