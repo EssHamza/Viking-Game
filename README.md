@@ -5,10 +5,10 @@ You can try this game here
 ## Introduction
 Viking Rush is an exciting and challenging game where you control a Viking exploring different worlds. Your mission is to collect coins and avoid dangerous objects to achieve the highest score possible. Be careful not to die!
 
-##Built with 
--HTML5
--CSS3
--JavaScript
+## Built with 
+- HTML5
+- CSS3
+- JavaScript
 
 
 ## How to Play
