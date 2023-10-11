@@ -215,13 +215,14 @@ function handleCollision(obj, index) {
 
 function gameOver() {
   isGameOver = true;
-
+ 
   scoreDisplay.style.display = 'none';
   canvas.style.display = 'none';
   startSound.pause();
   
   gameOverScreen.style.display = 'block';
   gameOverScoreDisplay.textContent = score;
+  cancelAnimationFrame()
 }
 
 restartBtn.addEventListener('click', function () {
