@@ -1,6 +1,6 @@
-# Root-Learn-Web-App
+# Viking-Game
 
-You can try this game here  https://esshamza.github.io/Root-Learn-Web-App/
+You can try this game here  [https://esshamza.github.io/Root-Learn-Web-App/](https://esshamza.github.io/Viking-Game/)
 
 ## Introduction
 Viking Rush is an exciting and challenging game where you control a Viking exploring different worlds. Your mission is to collect coins and avoid dangerous objects to achieve the highest score possible. Be careful not to die!
