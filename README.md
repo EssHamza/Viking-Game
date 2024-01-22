@@ -24,7 +24,7 @@ Viking Rush is an exciting and challenging game where you control a Viking explo
 - Background music and collision sounds.
 - Game Over screen with final score display.
 
-## Installation
+## Contributing
 1. Clone the repository to your local machine.
 2. Open the `index.html` file in a modern web browser.
 3. Click the **START** button to begin the game.
